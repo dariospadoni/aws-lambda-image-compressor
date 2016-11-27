@@ -1,0 +1,36 @@
+{
+  "name": "lambda-image-compressor",
+  "version": "0.0.0",
+  "description": "Lambda function to compress images",
+  "main": "index.js",
+  "author": "Dario Spadoni <dariospadoni@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "aws-sdk": "^2.3.9",
+    "gm": "^1.23.0",
+    "node-aws-lambda": "^0.1.8",
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "aws-sdk": "^2.3.9",
+    "browserify": "^11.0.1",
+    "del": "^1.1.0",
+    "dotenv": "^1.2.0",
+    "gulp": "^3.8.10",
+    "gulp-if": "^1.2.5",
+    "gulp-install": "^0.6.0",
+    "gulp-mocha": "^2.1.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-zip": "^2.0.2",
+    "jslint": "^0.10.3",
+    "run-sequence": "^1.0.2",
+    "source": "0.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^3.18.0"
+  }
+}
