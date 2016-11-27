@@ -10,7 +10,16 @@ I then decided to write my simple function and some gulp task to quickly deploy 
 # image compression flow
 The function should be invoked by a S3 trigger when a new image is uploaded to some S3 bucket. Once invoked, the function creates compressed and resized images of the original images and save them into another bucket. 
 
+You can easily configure the widths of the resized image and their destination bucket/subfolder.
+
 # requirements
 node.js (AWS Lambda working version is 4.3.2)
 
-# 
+# usage
+
+Set your environment variables, install dependencies and deploy on lambda:
+
+- set AWS_ACCESS_KEY_ID=< your AWS access key id >
+- set AWS_SECRET_ACCESS_KEY=< your AWS secret access key >
+- npm install
+- gulp deploy
