@@ -106,6 +106,7 @@ exports.handler = function (event, context) {
                 Bucket: destinationBucket,
                 Key: key,
                 Body: buffer,
+                ContentType: 'image/jpeg',
                 ACL: 'public-read'
               }, function () {
                 console.log('image uploaded');
@@ -124,6 +125,7 @@ exports.handler = function (event, context) {
                 Bucket: destinationBucket,
                 Key: key,
                 Body: buffer,
+                ContentType: 'image/jpeg',
                 ACL: 'public-read'
               }, function () {
                 console.log('image uploaded');
