@@ -92,8 +92,8 @@ exports.handler = function (event, context) {
 
           var width = _sizesArray[index].width;
 
-          var index = fileName.lastIndexOf('.');
-          var key = srcPath + _sizesArray[index].destinationPath + "/"+ fileName.slice(0, index) + ".jpg";
+          var position = fileName.lastIndexOf('.');
+          var key = srcPath + _sizesArray[index].destinationPath + "/"+ fileName.slice(0, position) + ".jpg";
 
           if (imgSize.width > width) {
             console.log('image resizing ' + imgSize.width + ' --> ' + width);
