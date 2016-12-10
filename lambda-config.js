@@ -13,5 +13,5 @@ module.exports = {
   functionName: '<function name here>',
   timeout: 20,
   memorySize: 256,
-  runtime: 'nodejs'
+  runtime: 'nodejs4.3'
 };
