@@ -26,6 +26,11 @@ You can easily configure the widths of the resized image and their destination b
 - npm install
 - gulp deploy
 
+## Update Runtime 
+
+In case you need to update your runtime environment, you can run the following command:
+
+```aws lambda update-function-configuration --function-name <function name as in lambda-config.js> --runtime nodejs4.3```
 ## Todo
 
 - some code optimization
