@@ -20,6 +20,11 @@ gulp.task('js', function () {
     .pipe(gulp.dest('build/'));
 });
 
+gulp.task('env', function () {
+  return gulp.src('.env')
+    .pipe(gulp.dest('build/'));
+});
+
 gulp.task('node-mods', function () {
   return gulp.src('./package.json')
     .pipe(gulp.dest('build/'))
@@ -27,7 +32,9 @@ gulp.task('node-mods', function () {
 });
 
 gulp.task('zip', function () {
-  return gulp.src(['build/**/*', '!build/package.json'])
+  return gulp.src(['build/**/*', '!build/package.json'], {
+      dot: true
+    })
     .pipe(zip(packageFile))
     .pipe(gulp.dest('./dist/'));
 });
@@ -40,7 +47,7 @@ gulp.task('upload', function (callback) {
 gulp.task('deploy', function (callback) {
   return runSequence(
     ['clean'],
-    ['js', 'node-mods'],
+    ['js', 'env', 'node-mods'],
     ['zip'],
     ['upload'],
     callback
