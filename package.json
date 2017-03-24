@@ -8,6 +8,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "aws-sdk": "^2.3.9",
+    "dotenv": "^1.2.0",
     "gm": "^1.23.0",
     "node-aws-lambda": "^0.1.8",
     "path": "^0.12.7",
@@ -19,7 +20,6 @@
     "aws-sdk": "^2.3.9",
     "browserify": "^11.0.1",
     "del": "^1.1.0",
-    "dotenv": "^1.2.0",
     "gulp": "^3.8.10",
     "gulp-if": "^1.2.5",
     "gulp-install": "^0.6.0",
